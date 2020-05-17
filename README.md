@@ -12,8 +12,8 @@ git clone https://github.com/thejoyoflife/vehicle-showroom.git
 # enter the project directory
 cd vehicle-showroom
 
-# execute the main program
-mvn exec:java
+# compile and execute the main program
+mvn compile exec:java
 ```
 
 ## License

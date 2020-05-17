@@ -6,7 +6,7 @@
 	<artifactId>vehicle-showroom</artifactId>
 	<version>1.0.0</version>
 	<name>A simple vehicle showroom</name>
-	<description>Vehicle Showroom with some functionalities</description>
+	<description>Vehicle Showroom with add, remove and list vehicles along with showing the current visitor count</description>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>

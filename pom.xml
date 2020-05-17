@@ -4,11 +4,31 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.vehicleshowroom</groupId>
 	<artifactId>vehicle-showroom</artifactId>
-	<version>1.0.0T</version>
+	<version>1.0.0</version>
 	<name>A simple vehicle showroom</name>
 	<description>Vehicle Showroom with some functionalities</description>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>com.vehicleshowroom.Main</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

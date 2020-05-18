@@ -23,7 +23,13 @@ public class ShowRoom {
 	}
 	
 	public Vehicle removeVehicle(String id) {
-		return vehicles.remove(id);
+		Vehicle removed = vehicles.remove(id);
+		if (removed != null) {
+			if (removed.type() instanceof VehicleTypes.Sports) {
+				currentVisitors.addAndGet(-20);
+			}
+		}
+		return removed;
 	}
 	
 	public Collection<Vehicle> vehicles() {
